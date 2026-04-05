@@ -36,8 +36,10 @@ import com.cristianv.radianceapp.model.Product
 import com.cristianv.radianceapp.ui.screens.*
 import com.cristianv.radianceapp.ui.theme.RadianceAppTheme
 import com.cristianv.radianceapp.viewmodel.*
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 private val android.content.Context.mainDataStore: DataStore<Preferences>
     by preferencesDataStore(name = "main_prefs")
@@ -47,24 +49,27 @@ private val LANGUAGE_KEY = stringPreferencesKey("language")
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Set Spanish as default locale before super.onCreate to avoid flicker.
-        // Only override if no per-app locale has been set by the user yet.
-        if (AppCompatDelegate.getApplicationLocales().isEmpty) {
-            AppCompatDelegate.setApplicationLocales(
-                LocaleListCompat.forLanguageTags("es")
-            )
+        // Read the user's saved language preference synchronously before super.onCreate
+        // so the correct locale is in place before the first frame renders.
+        // Defaults to "es" on first install regardless of device language.
+        val savedLanguage = runBlocking {
+            applicationContext.mainDataStore.data.first()[LANGUAGE_KEY] ?: "es"
         }
+        AppCompatDelegate.setApplicationLocales(
+            LocaleListCompat.forLanguageTags(savedLanguage)
+        )
 
         installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        
+
         setContent {
             val context = LocalContext.current
+            val activity = context as? android.app.Activity
             val coroutineScope = rememberCoroutineScope()
 
             var isDarkTheme by rememberSaveable { mutableStateOf(false) }
-            val currentLanguage = AppCompatDelegate.getApplicationLocales().toLanguageTags().ifEmpty { "es" }
+            val currentLanguage = savedLanguage
 
             LaunchedEffect(Unit) {
                 context.mainDataStore.data
@@ -87,13 +92,16 @@ class MainActivity : AppCompatActivity() {
                     currentLanguage = currentLanguage,
                     onLanguageChange = { lang ->
                         coroutineScope.launch {
+                            // 1. Persist the choice so it survives app restarts
                             context.mainDataStore.edit { prefs ->
                                 prefs[LANGUAGE_KEY] = lang
                             }
-                            // This will trigger an activity recreation with the new locale
+                            // 2. Apply the locale for the current process
                             AppCompatDelegate.setApplicationLocales(
                                 LocaleListCompat.forLanguageTags(lang)
                             )
+                            // 3. Recreate the activity so all string resources reload
+                            activity?.recreate()
                         }
                     }
                 )
