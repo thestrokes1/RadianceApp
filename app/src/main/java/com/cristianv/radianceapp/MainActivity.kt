@@ -48,13 +48,34 @@ private val DARK_MODE_KEY = booleanPreferencesKey("dark_mode")
 private val LANGUAGE_KEY = stringPreferencesKey("language")
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        // Read the user's saved language preference synchronously before super.onCreate
-        // so the correct locale is in place before the first frame renders.
-        // Defaults to "es" on first install regardless of device language.
-        val savedLanguage = runBlocking {
-            applicationContext.mainDataStore.data.first()[LANGUAGE_KEY] ?: "es"
+
+    // Stored in attachBaseContext so onCreate can reuse without a second DataStore read.
+    private var savedLanguage = "es"
+
+    override fun attachBaseContext(newBase: android.content.Context) {
+        // attachBaseContext is called before onCreate and before any resources are
+        // inflated. This is the only reliable place to force the locale on every
+        // launch, including first install on English-system devices.
+        savedLanguage = runBlocking {
+            newBase.mainDataStore.data.first()[LANGUAGE_KEY] ?: "es"
         }
+        val locale = java.util.Locale(savedLanguage)
+        java.util.Locale.setDefault(locale)
+        val config = android.content.res.Configuration(newBase.resources.configuration)
+        config.setLocale(locale)
+        super.attachBaseContext(newBase.createConfigurationContext(config))
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        // Reinforce the locale via both APIs for maximum compatibility across
+        // API levels. savedLanguage was already read in attachBaseContext.
+        val locale = java.util.Locale(savedLanguage)
+        java.util.Locale.setDefault(locale)
+        val config = android.content.res.Configuration()
+        config.setLocale(locale)
+        @Suppress("DEPRECATION")
+        resources.updateConfiguration(config, resources.displayMetrics)
+
         AppCompatDelegate.setApplicationLocales(
             LocaleListCompat.forLanguageTags(savedLanguage)
         )
@@ -92,15 +113,17 @@ class MainActivity : AppCompatActivity() {
                     currentLanguage = currentLanguage,
                     onLanguageChange = { lang ->
                         coroutineScope.launch {
-                            // 1. Persist the choice so it survives app restarts
+                            // 1. Persist so the next attachBaseContext reads the right value
                             context.mainDataStore.edit { prefs ->
                                 prefs[LANGUAGE_KEY] = lang
                             }
-                            // 2. Apply the locale for the current process
+                            // 2. Java Locale — affects anything not yet recomposed
+                            java.util.Locale.setDefault(java.util.Locale(lang))
+                            // 3. AppCompat per-app locale API
                             AppCompatDelegate.setApplicationLocales(
                                 LocaleListCompat.forLanguageTags(lang)
                             )
-                            // 3. Recreate the activity so all string resources reload
+                            // 4. Recreate so attachBaseContext runs again with the new locale
                             activity?.recreate()
                         }
                     }
