@@ -1,0 +1,73 @@
+# ============================================================
+#  .claudeignore — RadianceApp (Android / Kotlin / Compose)
+#  Goal: máximo ahorro de tokens, cero ruido, cero pérdida de contexto útil
+# ============================================================
+
+# ── Build outputs ──────────────────────────────────────────
+build/
+app/build/
+.gradle/
+**/.gradle/
+**/build/
+out/
+
+# ── Gradle wrapper binaries ────────────────────────────────
+gradle/wrapper/gradle-wrapper.jar
+
+# ── Android generated / intermediates ──────────────────────
+app/src/main/assets/
+app/src/androidTest/
+app/src/test/
+**/*.apk
+**/*.aab
+**/*.aar
+**/*.class
+**/*.dex
+**/*.keystore
+**/*.jks
+
+# ── IDE / OS metadata ──────────────────────────────────────
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp
+
+# ── Version control noise ──────────────────────────────────
+.git/
+
+# ── Firebase / secrets (nunca al contexto) ─────────────────
+google-services.json
+**/google-services.json
+local.properties
+keystore.properties
+*.env
+secrets.properties
+
+# ── Logs & reports ────────────────────────────────────────
+**/*.log
+lint-results*
+*.html           # lint HTML reports
+**/reports/
+
+# ── Large / binary assets ─────────────────────────────────
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.webp
+**/*.gif
+**/*.svg
+**/*.ttf
+**/*.otf
+**/*.mp4
+**/*.zip
+
+# ── Node / tooling (si usás algún script JS auxiliar) ──────
+node_modules/
+package-lock.json
+yarn.lock
+
+# ── Archivos de configuración de bajo valor para Claude ────
+.editorconfig
+.gitattributes
+proguard-rules.pro     # Claude no necesita leer reglas ProGuard salvo pedido explícito

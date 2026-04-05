@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "403210489726",
+    "project_id": "radianceapp-ea399",
+    "storage_bucket": "radianceapp-ea399.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403210489726:android:221c830a98d23fb6296d2f",
+        "android_client_info": {
+          "package_name": "com.cristianv.radianceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403210489726-nlaigcmkb9nu6tbcaiqulb12r0c56bd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cristianv.radianceapp",
+            "certificate_hash": "ce5eb0cb99d866b714cd04bee7621cda62a1a48a"
+          }
+        },
+        {
+          "client_id": "403210489726-0r60upqp3b5r29bkb37ce02q3k67uf0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQelWt82DuUBvbv2YFJ6r0_IIBgbCy5hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403210489726-0r60upqp3b5r29bkb37ce02q3k67uf0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

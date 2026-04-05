@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radiance</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Your style, your way</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_title_1">Discover Fashion</string>
+    <string name="onboarding_desc_1">Browse thousands of styles curated just for you</string>
+    <string name="onboarding_title_2">Easy Shopping</string>
+    <string name="onboarding_desc_2">Add to cart and checkout in just a few taps</string>
+    <string name="onboarding_title_3">Fast Delivery</string>
+    <string name="onboarding_desc_3">Get your order delivered right to your door</string>
+
+    <!-- Auth -->
+    <string name="auth_welcome_back">Welcome back</string>
+    <string name="auth_create_your_account">Create your account</string>
+    <string name="auth_login">Login</string>
+    <string name="auth_sign_up">Sign Up</string>
+    <string name="auth_full_name">Full name</string>
+    <string name="auth_email">Email address</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_confirm_password">Confirm password</string>
+    <string name="auth_passwords_mismatch">Passwords do not match</string>
+    <string name="auth_create_account">Create Account</string>
+    <string name="auth_or">OR</string>
+    <string name="auth_sign_in_google">Sign in with Google</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hello, Cristian 👋</string>
+    <string name="home_search">Search</string>
+    <string name="home_filter_sort">Filter &amp; Sort</string>
+    <string name="home_notifications">Notifications</string>
+    <string name="home_new_collection">NEW COLLECTION</string>
+    <string name="home_season">Spring · Summer 2025</string>
+    <string name="home_shop_now">Shop Now →</string>
+    <string name="home_featured">Featured</string>
+    <string name="home_results">Results (%d)</string>
+    <string name="home_refresh">Refresh</string>
+    <string name="home_error">Could not load products</string>
+    <string name="home_try_again">Try again</string>
+
+    <!-- Filter / Sort sheet -->
+    <string name="filter_reset">Reset</string>
+    <string name="filter_close">Close</string>
+    <string name="filter_sort_by">Sort By</string>
+    <string name="filter_price_range">Price Range</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_apply">Apply Filters</string>
+    <string name="sort_default">Default</string>
+    <string name="sort_price_low_high">Price: Low to High</string>
+    <string name="sort_price_high_low">Price: High to Low</string>
+    <string name="sort_rating">Top Rated</string>
+    <string name="sort_newest">Newest</string>
+    <string name="filter_adjust_hint">Try adjusting your filters</string>
+    <string name="filter_clear">Clear filters</string>
+
+    <!-- General / shared -->
+    <string name="no_products_found">No products found</string>
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+
+    <!-- Product Detail -->
+    <string name="product_select_size">Select Size</string>
+    <string name="product_size_guide">Size guide</string>
+    <string name="product_select_color">Select Color</string>
+    <string name="product_color_selected">Color: %s</string>
+    <string name="product_description">Description</string>
+    <string name="product_add_to_cart">Add to Cart — $%s</string>
+    <string name="product_reviews">(%d reviews)</string>
+    <string name="product_favorite">Favorite</string>
+    <string name="product_share">Share</string>
+
+    <!-- Cart -->
+    <string name="cart_title">My Cart</string>
+    <string name="cart_clear_all">Clear all</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_you_save">You save</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_checkout">Proceed to Checkout</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="cart_empty_hint">Add items to get started</string>
+    <string name="cart_item_size">Size: %s</string>
+    <string name="cart_item_color">Color: %s</string>
+    <string name="cart_remove">Remove</string>
+
+    <!-- Wishlist -->
+    <string name="wishlist_title">My Wishlist</string>
+    <string name="wishlist_empty">Your wishlist is empty</string>
+    <string name="wishlist_empty_hint">Save items you love here</string>
+
+    <!-- Search -->
+    <string name="search_placeholder">Search clothes, brands…</string>
+    <string name="search_clear">Clear</string>
+    <string name="search_recent">Recent searches</string>
+    <string name="search_all_products">All products</string>
+    <string name="search_no_results">No results for \"%s\"</string>
+    <string name="search_no_results_hint">Try a different search term</string>
+    <string name="search_results_count">%1$d result(s) for \"%2$s\"</string>
+
+    <!-- Checkout -->
+    <string name="checkout_step_shipping">Shipping Address</string>
+    <string name="checkout_step_summary">Order Summary</string>
+    <string name="checkout_step_confirm">Confirmation</string>
+    <string name="checkout_deliver_question">Where should we deliver?</string>
+    <string name="checkout_full_name">Full Name</string>
+    <string name="checkout_address">Address</string>
+    <string name="checkout_city">City</string>
+    <string name="checkout_country">Country</string>
+    <string name="checkout_continue">Continue</string>
+    <string name="checkout_shipping_to">Shipping to</string>
+    <string name="checkout_items_count">Items (%d)</string>
+    <string name="checkout_shipping_label">Shipping</string>
+    <string name="checkout_place_order">Place Order</string>
+    <string name="checkout_success_title">Order Placed Successfully!</string>
+    <string name="checkout_success_message">Thank you for your purchase, %s!</string>
+    <string name="checkout_order_details">Order Details</string>
+    <string name="checkout_order_id">Order ID</string>
+    <string name="checkout_delivering_to">Delivering to</string>
+    <string name="checkout_order_total">Order total</string>
+    <string name="checkout_items_label">Items</string>
+    <string name="checkout_continue_shopping">Continue Shopping</string>
+    <string name="checkout_error">Failed to place order</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_premium_member">Premium Member</string>
+    <string name="profile_account_info">Account info</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_member_since">Member since</string>
+    <string name="profile_account_type">Account type</string>
+    <string name="profile_premium">Premium</string>
+    <string name="profile_settings">Settings</string>
+    <string name="profile_dark_mode">Dark Mode</string>
+    <string name="profile_dark_enabled">Dark theme enabled</string>
+    <string name="profile_light_enabled">Light theme enabled</string>
+    <string name="profile_my_orders">My Orders</string>
+    <string name="profile_my_orders_subtitle">Track and manage orders</string>
+    <string name="profile_shipping_address">Shipping Address</string>
+    <string name="profile_shipping_address_subtitle">Manage delivery addresses</string>
+    <string name="profile_payment">Payment Methods</string>
+    <string name="profile_payment_subtitle">Cards and payment options</string>
+    <string name="profile_notifications">Notifications</string>
+    <string name="profile_notifications_subtitle">Manage your alerts</string>
+    <string name="profile_privacy">Privacy &amp; Security</string>
+    <string name="profile_privacy_subtitle">Password and security</string>
+    <string name="profile_help">Help &amp; Support</string>
+    <string name="profile_help_subtitle">FAQ and contact us</string>
+    <string name="profile_about">About Radiance</string>
+    <string name="profile_about_subtitle">Version 1.0.0</string>
+    <string name="profile_version">Radiance v1.0.0</string>
+    <string name="profile_logout">Log out</string>
+    <string name="profile_stat_orders">Orders</string>
+    <string name="profile_stat_wishlist">Wishlist</string>
+    <string name="profile_stat_cart">Cart</string>
+    <string name="profile_language">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_dialog_title">Select Language</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_wishlist">Wishlist</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Admin -->
+    <string name="admin_panel">Admin Panel</string>
+    <string name="admin_tab_products">Products</string>
+    <string name="admin_tab_orders">Orders</string>
+    <string name="admin_products_count">Products (%d)</string>
+    <string name="admin_add_product_title">Add New Product</string>
+    <string name="admin_product_name">Product Name</string>
+    <string name="admin_brand">Brand</string>
+    <string name="admin_price">Price</string>
+    <string name="admin_original_price">Original Price</string>
+    <string name="admin_category">Category</string>
+    <string name="admin_image_url">Image URL</string>
+    <string name="admin_pick_image">Pick Image from Gallery</string>
+    <string name="admin_uploading">Uploading…</string>
+    <string name="admin_description">Description</string>
+    <string name="admin_sizes_hint">Sizes (comma separated)</string>
+    <string name="admin_colors_hint">Colors (comma separated)</string>
+    <string name="admin_mark_new">Mark as New</string>
+    <string name="admin_save_changes">Save Changes</string>
+    <string name="admin_add_product_btn">Add Product</string>
+    <string name="admin_edit_product">Edit Product</string>
+    <string name="admin_orders_count">Orders (%d)</string>
+    <string name="admin_no_orders">No orders yet</string>
+    <string name="admin_mark_complete">Mark Complete</string>
+    <string name="admin_order_dialog_title">Order #%s</string>
+    <string name="admin_ship_to">Ship to: %s</string>
+    <string name="admin_collapse">Collapse</string>
+    <string name="admin_expand">Expand</string>
+    <string name="admin_edit">Edit</string>
+    <string name="admin_delete">Delete</string>
+
+    <!-- Categories -->
+    <string name="category_all">All</string>
+    <string name="category_women">Women</string>
+    <string name="category_men">Men</string>
+    <string name="category_kids">Kids</string>
+    <string name="category_accessories">Accessories</string>
+    <string name="category_sale">Sale</string>
+</resources>

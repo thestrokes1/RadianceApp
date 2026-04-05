@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radiance</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Tu estilo, a tu manera</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Omitir</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_get_started">Comenzar</string>
+    <string name="onboarding_title_1">Descubrí la Moda</string>
+    <string name="onboarding_desc_1">Explorá miles de estilos seleccionados para vos</string>
+    <string name="onboarding_title_2">Compras Fáciles</string>
+    <string name="onboarding_desc_2">Agregá al carrito y comprá en pocos pasos</string>
+    <string name="onboarding_title_3">Envío Rápido</string>
+    <string name="onboarding_desc_3">Recibí tu pedido directamente en tu puerta</string>
+
+    <!-- Auth -->
+    <string name="auth_welcome_back">Bienvenido/a de nuevo</string>
+    <string name="auth_create_your_account">Creá tu cuenta</string>
+    <string name="auth_login">Ingresar</string>
+    <string name="auth_sign_up">Registrarse</string>
+    <string name="auth_full_name">Nombre completo</string>
+    <string name="auth_email">Correo electrónico</string>
+    <string name="auth_password">Contraseña</string>
+    <string name="auth_confirm_password">Confirmá la contraseña</string>
+    <string name="auth_passwords_mismatch">Las contraseñas no coinciden</string>
+    <string name="auth_create_account">Crear cuenta</string>
+    <string name="auth_or">O</string>
+    <string name="auth_sign_in_google">Ingresar con Google</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hola, Cristian 👋</string>
+    <string name="home_search">Buscar</string>
+    <string name="home_filter_sort">Filtrar y Ordenar</string>
+    <string name="home_notifications">Notificaciones</string>
+    <string name="home_new_collection">NUEVA COLECCIÓN</string>
+    <string name="home_season">Primavera · Verano 2025</string>
+    <string name="home_shop_now">Comprar Ahora →</string>
+    <string name="home_featured">Destacados</string>
+    <string name="home_results">Resultados (%d)</string>
+    <string name="home_refresh">Actualizar</string>
+    <string name="home_error">No se pudieron cargar los productos</string>
+    <string name="home_try_again">Reintentar</string>
+
+    <!-- Filter / Sort sheet -->
+    <string name="filter_reset">Restablecer</string>
+    <string name="filter_close">Cerrar</string>
+    <string name="filter_sort_by">Ordenar por</string>
+    <string name="filter_price_range">Rango de precio</string>
+    <string name="filter_category">Categoría</string>
+    <string name="filter_apply">Aplicar filtros</string>
+    <string name="sort_default">Predeterminado</string>
+    <string name="sort_price_low_high">Precio: menor a mayor</string>
+    <string name="sort_price_high_low">Precio: mayor a menor</string>
+    <string name="sort_rating">Mejor valorados</string>
+    <string name="sort_newest">Más nuevos</string>
+    <string name="filter_adjust_hint">Intentá ajustar los filtros</string>
+    <string name="filter_clear">Limpiar filtros</string>
+
+    <!-- General / shared -->
+    <string name="no_products_found">No se encontraron productos</string>
+    <string name="back">Volver</string>
+    <string name="close">Cerrar</string>
+
+    <!-- Product Detail -->
+    <string name="product_select_size">Seleccionar talle</string>
+    <string name="product_size_guide">Guía de talles</string>
+    <string name="product_select_color">Seleccionar color</string>
+    <string name="product_color_selected">Color: %s</string>
+    <string name="product_description">Descripción</string>
+    <string name="product_add_to_cart">Agregar al carrito — $%s</string>
+    <string name="product_reviews">(%d reseñas)</string>
+    <string name="product_favorite">Favorito</string>
+    <string name="product_share">Compartir</string>
+
+    <!-- Cart -->
+    <string name="cart_title">Mi carrito</string>
+    <string name="cart_clear_all">Limpiar todo</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_you_save">Ahorrás</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_checkout">Proceder al pago</string>
+    <string name="cart_empty">Tu carrito está vacío</string>
+    <string name="cart_empty_hint">Agregá productos para comenzar</string>
+    <string name="cart_item_size">Talle: %s</string>
+    <string name="cart_item_color">Color: %s</string>
+    <string name="cart_remove">Eliminar</string>
+
+    <!-- Wishlist -->
+    <string name="wishlist_title">Lista de deseos</string>
+    <string name="wishlist_empty">Tu lista de deseos está vacía</string>
+    <string name="wishlist_empty_hint">Guardá los artículos que te gustan acá</string>
+
+    <!-- Search -->
+    <string name="search_placeholder">Buscar ropa, marcas…</string>
+    <string name="search_clear">Limpiar</string>
+    <string name="search_recent">Búsquedas recientes</string>
+    <string name="search_all_products">Todos los productos</string>
+    <string name="search_no_results">Sin resultados para \"%s\"</string>
+    <string name="search_no_results_hint">Probá con otro término de búsqueda</string>
+    <string name="search_results_count">%1$d resultado(s) para \"%2$s\"</string>
+
+    <!-- Checkout -->
+    <string name="checkout_step_shipping">Dirección de envío</string>
+    <string name="checkout_step_summary">Resumen del pedido</string>
+    <string name="checkout_step_confirm">Confirmación</string>
+    <string name="checkout_deliver_question">¿A dónde enviamos tu pedido?</string>
+    <string name="checkout_full_name">Nombre completo</string>
+    <string name="checkout_address">Dirección</string>
+    <string name="checkout_city">Ciudad</string>
+    <string name="checkout_country">País</string>
+    <string name="checkout_continue">Continuar</string>
+    <string name="checkout_shipping_to">Enviar a</string>
+    <string name="checkout_items_count">Artículos (%d)</string>
+    <string name="checkout_shipping_label">Envío</string>
+    <string name="checkout_place_order">Confirmar pedido</string>
+    <string name="checkout_success_title">¡Pedido confirmado!</string>
+    <string name="checkout_success_message">¡Gracias por tu compra, %s!</string>
+    <string name="checkout_order_details">Detalles del pedido</string>
+    <string name="checkout_order_id">N.° de pedido</string>
+    <string name="checkout_delivering_to">Entregar en</string>
+    <string name="checkout_order_total">Total del pedido</string>
+    <string name="checkout_items_label">Artículos</string>
+    <string name="checkout_continue_shopping">Seguir comprando</string>
+    <string name="checkout_error">No se pudo realizar el pedido</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_premium_member">Miembro Premium</string>
+    <string name="profile_account_info">Información de cuenta</string>
+    <string name="profile_email">Correo electrónico</string>
+    <string name="profile_member_since">Miembro desde</string>
+    <string name="profile_account_type">Tipo de cuenta</string>
+    <string name="profile_premium">Premium</string>
+    <string name="profile_settings">Configuración</string>
+    <string name="profile_dark_mode">Modo oscuro</string>
+    <string name="profile_dark_enabled">Tema oscuro activado</string>
+    <string name="profile_light_enabled">Tema claro activado</string>
+    <string name="profile_my_orders">Mis pedidos</string>
+    <string name="profile_my_orders_subtitle">Seguí y gestioná tus pedidos</string>
+    <string name="profile_shipping_address">Dirección de envío</string>
+    <string name="profile_shipping_address_subtitle">Administrá tus direcciones de entrega</string>
+    <string name="profile_payment">Métodos de pago</string>
+    <string name="profile_payment_subtitle">Tarjetas y opciones de pago</string>
+    <string name="profile_notifications">Notificaciones</string>
+    <string name="profile_notifications_subtitle">Gestioná tus alertas</string>
+    <string name="profile_privacy">Privacidad y Seguridad</string>
+    <string name="profile_privacy_subtitle">Contraseña y seguridad</string>
+    <string name="profile_help">Ayuda y Soporte</string>
+    <string name="profile_help_subtitle">Preguntas frecuentes y contacto</string>
+    <string name="profile_about">Sobre Radiance</string>
+    <string name="profile_about_subtitle">Versión 1.0.0</string>
+    <string name="profile_version">Radiance v1.0.0</string>
+    <string name="profile_logout">Cerrar sesión</string>
+    <string name="profile_stat_orders">Pedidos</string>
+    <string name="profile_stat_wishlist">Favoritos</string>
+    <string name="profile_stat_cart">Carrito</string>
+    <string name="profile_language">Idioma</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_dialog_title">Seleccionar idioma</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_wishlist">Favoritos</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Admin -->
+    <string name="admin_panel">Panel de administración</string>
+    <string name="admin_tab_products">Productos</string>
+    <string name="admin_tab_orders">Pedidos</string>
+    <string name="admin_products_count">Productos (%d)</string>
+    <string name="admin_add_product_title">Agregar producto</string>
+    <string name="admin_product_name">Nombre del producto</string>
+    <string name="admin_brand">Marca</string>
+    <string name="admin_price">Precio</string>
+    <string name="admin_original_price">Precio original</string>
+    <string name="admin_category">Categoría</string>
+    <string name="admin_image_url">URL de imagen</string>
+    <string name="admin_pick_image">Elegir imagen de la galería</string>
+    <string name="admin_uploading">Subiendo…</string>
+    <string name="admin_description">Descripción</string>
+    <string name="admin_sizes_hint">Talles (separados por coma)</string>
+    <string name="admin_colors_hint">Colores (separados por coma)</string>
+    <string name="admin_mark_new">Marcar como nuevo</string>
+    <string name="admin_save_changes">Guardar cambios</string>
+    <string name="admin_add_product_btn">Agregar producto</string>
+    <string name="admin_edit_product">Editar producto</string>
+    <string name="admin_orders_count">Pedidos (%d)</string>
+    <string name="admin_no_orders">Aún no hay pedidos</string>
+    <string name="admin_mark_complete">Marcar como completado</string>
+    <string name="admin_order_dialog_title">Pedido #%s</string>
+    <string name="admin_ship_to">Enviar a: %s</string>
+    <string name="admin_collapse">Contraer</string>
+    <string name="admin_expand">Expandir</string>
+    <string name="admin_edit">Editar</string>
+    <string name="admin_delete">Eliminar</string>
+
+    <!-- Categories -->
+    <string name="category_all">Todas</string>
+    <string name="category_women">Mujeres</string>
+    <string name="category_men">Hombres</string>
+    <string name="category_kids">Niños</string>
+    <string name="category_accessories">Accesorios</string>
+    <string name="category_sale">Ofertas</string>
+</resources>
